@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>  </title>
+</head>
+
+<body>
+
+	<input type="number" id="num" onblur="display()"/>
+	<input type="text" id="func" onblur="myFunc()"/>
+
+
+	<script>
+		console.log("Hello!");
+		var n;
+		
+
+		function display() {
+			n = parseInt(document.getElementById("num").value);
+			console.log(n);
+		}
+        function myFunc(){
+            var f = document.getElementById("func").value;
+            if (f == "add"){
+                console.log(n+n);
+            } else if (f == "square") {
+                console.log(n*n);
+            }
+            
+            var i = 0;
+            while(i <n){
+                console.log(i);
+                i++;
+            }
+            
+            
+        }
+        
+		
+	</script>
+</body>
+</html>
